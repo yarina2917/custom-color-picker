@@ -1,0 +1,22 @@
+<label
+  [cpPresetColors]= "['#000', '#800000', '#8B4513', '#2F4F4F', '#8B4513', '#008080', '#000080',
+                          '#4B0082', '#B22222', '#A52A2A', '#DAA520', '#006400', '#40E0D0', '#0000CD', '#800080', '#800080',
+                          '#F00', '#FF8C00', '#FFD700', '#008000', '#0FF' ,'#00F', '#EE82EE', '#A9A9A9',
+                          '#FFA07A', '#FFA500', '#FFFF00', '#AFEEEE', '#ADD8E6' ,'#DDA0DD', '#FFFF00', '#D3D3D3',
+                          '#FFF0F5', '#FAEBD7', '#FFFFE0', '#F0FFF0', '#F0FFFF' ,'#F0F8FF', '#E6E6FA', '#FFF'
+                          ]"
+  [cpAlphaChannel]="'always'"
+  [cpOutputFormat]="'hex'"
+  [cpOKButtonClass]= "'btn btn-primary btn-xs'"
+  [(colorPicker)]="color"
+  [cpPositionRelativeToArrow]="true"
+  [cpWidth]="'350px'"
+  [cpFallbackColor]="'#000'"
+  [cpCancelButtonClass]= "'btn btn-primary btn-xs'"
+  [cpSaveClickOutside]="true"
+  [cpPosition]="'left'"
+  [cpToggle]="true"
+  [cpDialogDisplay]="'inline'"
+  (colorPickerChange)="setColor($event)"
+  (mousedown)="false;">
+</label>
