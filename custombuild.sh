@@ -1,2 +1,2 @@
 #!/bin/sh
-ng build custom-color-picker --prod --output-hashing=none && cat dist/custom-color-picker/runtime.js dist/custom-color-picker/polyfills.js dist/custom-color-picker/scripts.js dist/custom-color-picker/main.js > preview/custom-color-picker.js
+ng build custom-color-picker --prod --output-hashing=none && cat dist/custom-color-picker/main-es5.js dist/custom-color-picker/main-es2015.js dist/custom-color-picker/polyfill-webcomp.js dist/custom-color-picker/polyfill-webcomp-es5.js dist/custom-color-picker/polyfills-es5.js dist/custom-color-picker/polyfills-es2015.js dist/custom-color-picker/runtime-es5.js dist/custom-color-picker/runtime-es2015.js dist/custom-color-picker/scripts.js> preview/custom-color-picker.js
