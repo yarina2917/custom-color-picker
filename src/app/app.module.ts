@@ -4,7 +4,7 @@ import { createCustomElement } from '@angular/elements';
 
 import { CustomColorPickerComponent } from './custom-color-picker/custom-color-picker.component';
 
-import { ColorPickerModule } from 'ngx-color-picker';
+import { ColorPickerModule } from '@stebneruslan/ngx-color-picker';
 
 @NgModule({
   declarations: [
