@@ -1,7 +1,6 @@
 import {Component, ChangeDetectorRef, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-custom-color-picker',
   templateUrl: './custom-color-picker.component.html',
   styleUrls: ['./custom-color-picker.component.scss']
 })

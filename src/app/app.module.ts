@@ -18,9 +18,9 @@ import { ColorPickerModule } from '@stebneruslan/ngx-color-picker';
   providers: [],
 })
 export class AppModule {
-  constructor(private injector: Injector) {
-    const custom = createCustomElement(CustomColorPickerComponent, { injector });
+  constructor(private injector: Injector) {}
+  ngDoBootstrap() {
+    const custom = createCustomElement(CustomColorPickerComponent, { injector: this.injector });
     customElements.define('app-custom-color-picker', custom);
   }
-  ngDoBootstrap() {}
 }
